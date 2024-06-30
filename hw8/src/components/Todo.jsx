@@ -43,11 +43,11 @@ function Todo({todo, deleteTodo, change, onStatus}) {
            </span>
             }
 
-            <button onClick={() => deleteTodo(todo.id)}>delete</button>
+            <button onClick={() => deleteTodo(todo.id)}>удалить</button>
             {added ? (
-                <button onClick={changeTitle}>save</button>
+                <button onClick={changeTitle}>сохранить</button>
             ): (
-                <button onClick={() => setAdded(true)}>update</button>
+                <button onClick={() => setAdded(true)}>изменить</button>
 
             )}
         </li>
